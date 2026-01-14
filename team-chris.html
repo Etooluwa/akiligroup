@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris A. Soboh - Akili Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+      :root { --bg-dark: #0f1115; --text-light: #f3f4f6; --accent-gold: #d4af37; }
+      body { background-color: var(--bg-dark); color: var(--text-light); font-family: 'Manrope', sans-serif; overflow-x: hidden; }
+      h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; }
+      .text-gold { color: var(--accent-gold); }
+      .border-gold { border-color: var(--accent-gold); }
+      .bg-gold { background-color: var(--accent-gold); }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--bg-dark); }
+      ::-webkit-scrollbar-thumb { background: #333; }
+      ::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
+      /* Mobile Menu Transition */
+      .mobile-menu-open {
+          transform: translateX(0%) !important;
+      }
+      body.menu-open {
+          overflow: hidden;
+      }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#d4af37] selection:text-black min-h-screen flex flex-col">
+
+
+
+
+  <!-- NAVIGATION -->
+  <nav class="fixed w-full z-50 px-6 py-6 md:px-12 flex justify-between items-center transition-all duration-300 text-white bg-[#0f1115]/90 backdrop-blur-md border-b border-white/5" id="navbar">
+      <a href="index.html" class="z-50 relative drop-shadow-md">
+          <img src="https://i.imgur.com/EJghNxS.jpeg" alt="Akili Group Logo" class="h-12 w-auto">
+      </a>
+    
+      <!-- Desktop Menu -->
+      <div class="hidden xl:flex gap-8 text-xs uppercase tracking-[0.2em] font-medium items-center drop-shadow-md">
+          <a href="index.html#services" class="hover:text-[#d4af37] transition-colors">Firm</a>
+          <a href="about.html" class="hover:text-[#d4af37] transition-colors">About Us</a>
+          <a href="index.html#team" class="hover:text-[#d4af37] transition-colors">Leadership</a>
+          <a href="index.html#services" class="hover:text-[#d4af37] transition-colors">Services</a>
+          <a href="index.html#careers" class="hover:text-[#d4af37] transition-colors">Careers</a>
+      </div>
+      <a href="index.html#contact-form-section" class="hidden xl:block border border-white/30 px-6 py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all z-50 drop-shadow-md bg-black/10 backdrop-blur-sm">Contact</a>
+    
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="xl:hidden z-50 p-2 focus:outline-none text-white drop-shadow-md">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+      </button>
+  </nav>
+
+
+
+
+  <!-- MOBILE OFF-CANVAS MENU -->
+  <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0f1115]/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col justify-center items-center xl:hidden">
+      <button id="close-menu-btn" class="absolute top-6 right-6 p-2 text-white/50 hover:text-white transition-colors">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+      </button>
+
+
+
+
+      <div class="flex flex-col gap-8 text-center">
+          <a href="index.html#services" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Firm</a>
+          <a href="about.html" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">About Us</a>
+          <a href="index.html#team" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Leadership</a>
+          <a href="index.html#services" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Services</a>
+          <a href="index.html#careers" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Careers</a>
+          <a href="index.html#contact-form-section" class="mt-8 inline-block border border-white/30 px-8 py-4 text-xs uppercase tracking-[0.2em] text-white hover:bg-gold hover:border-gold hover:text-black transition-all mobile-link">
+              Contact
+          </a>
+      </div>
+  </div>
+
+
+
+
+  <!-- CONTENT SECTION -->
+  <main class="pt-32 pb-20 px-6 md:px-20 max-w-7xl mx-auto flex-grow">
+    
+      <!-- Breadcrumb / Back Link -->
+      <div class="mb-12 fade-in-up">
+          <a href="index.html#team" class="text-gold text-xs uppercase tracking-widest hover:text-white transition-colors flex items-center gap-2">
+              &larr; Back to Team
+          </a>
+      </div>
+
+
+
+
+      <div class="flex flex-col lg:flex-row gap-16 items-start">
+        
+          <!-- Left Column: Photo & Title -->
+          <div class="w-full lg:w-1/3 fade-in-up">
+              <div class="aspect-[3/4] w-full overflow-hidden mb-8 border border-white/5 relative bg-[#1a1d24]">
+                  <!-- Updated Chris' picture URL -->
+                  <img src="https://i.imgur.com/mdiYVaS.jpeg"
+                       alt="Chris A. Soboh"
+                       class="w-full h-full object-cover transition-all duration-700">
+              </div>
+            
+              <h1 class="text-3xl md:text-4xl serif text-white mb-2">Chris A. Soboh</h1>
+              <p class="text-gold text-sm uppercase tracking-widest font-light mb-6">COO / Managing Partner</p>
+            
+              <div class="w-20 h-[1px] bg-white/20 mb-6"></div>
+            
+              <div class="flex flex-col gap-3 text-sm text-gray-400 font-light">
+                  <!-- Email Link -->
+                  <a href="mailto:chris@akiligroup.ca" class="hover:text-gold transition-colors flex items-center gap-3">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                      Email Chris
+                  </a>
+                  <!-- LinkedIn Link -->
+                  <a href="https://www.linkedin.com/in/albert-chris-soboh-51aaa2127/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors flex items-center gap-3">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      LinkedIn Profile
+                  </a>
+              </div>
+          </div>
+
+
+
+
+          <!-- Right Column: Biography -->
+          <div class="w-full lg:w-2/3 text-gray-300 font-light text-lg leading-relaxed space-y-8 fade-in-up" style="transition-delay: 0.1s">
+              <p>
+                  <span class="text-gold serif text-2xl mr-1">Albert Chris Soboh</span> is a corporate lawyer and business executive with a multidisciplinary background in law, strategy, and brand development. At Akili Group, he brings a structured and creative approach to business growth, combining legal expertise with strategic insight to support clients, partners, and portfolio companies in achieving long-term value creation.
+              </p>
+              <p>
+                  Chris’ experience spans corporate advisory, partnerships, and institutional development. Beyond the boardroom, he serves as Editor-in-Chief of <span class="text-white font-medium">EMY Africa Magazine</span> and plays a leading role at EMY Africa.
+              </p>
+              <p>
+                  He is also a Director at Carbon AV Limited and Co-Founder of <span class="text-white font-medium">Each One, Reach One</span>, an initiative focused on mentorship and financial literacy for young people.
+              </p>
+          </div>
+
+
+
+
+      </div>
+  </main>
+
+
+
+
+  <footer class="bg-black py-10 border-t border-white/10 text-center text-[10px] text-gray-600 uppercase tracking-widest mt-auto">
+      <p>&copy; 2024 Akili Group Corp.</p>
+  </footer>
+
+
+
+
+  <!-- GSAP Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+      // Mobile Menu Logic
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const closeMenuBtn = document.getElementById('close-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+
+
+
+      function toggleMenu() {
+          mobileMenu.classList.toggle('mobile-menu-open');
+          document.body.classList.toggle('menu-open');
+      }
+
+
+
+
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
+      if (closeMenuBtn) closeMenuBtn.addEventListener('click', toggleMenu);
+
+
+
+
+      // Close menu when a link is clicked
+      mobileLinks.forEach(link => {
+          link.addEventListener('click', toggleMenu);
+      });
+
+
+
+
+      // Simple entry animation
+      document.addEventListener("DOMContentLoaded", () => {
+          gsap.fromTo(".fade-in-up",
+              { opacity: 0, y: 30 },
+              { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" }
+          );
+      });
+  </script>
+</body>
+</html>

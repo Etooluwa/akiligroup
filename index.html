@@ -765,8 +765,8 @@
                     document.getElementById('pdf-download-container').classList.remove('hidden');
                 } else {
                     const errorData = await response.json();
-                    console.error("Submission Error:", errorData.error);
-                    alert("Something went wrong. Please try again.");
+                    console.error("Submission Error:", errorData);
+                    alert("Error: " + (errorData.error || "Something went wrong.") + "\n\nPlease check your console or Resend dashboard.");
                     submitBtn.innerText = originalText;
                     submitBtn.disabled = false;
                 }

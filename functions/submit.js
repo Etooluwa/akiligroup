@@ -37,12 +37,17 @@ export async function onRequestPost(context) {
         headers: { 'Content-Type': 'application/json' },
       });
     } else {
-      return new Response(JSON.stringify({ error: data.message || 'Failed to send email' }), {
-        status: 500,
+      console.error("Resend API Error:", data);
+      return new Response(JSON.stringify({
+        error: data.message || 'Failed to send email',
+        details: data
+      }), {
+        status: resendResponse.status,
         headers: { 'Content-Type': 'application/json' },
       });
     }
   } catch (error) {
+    console.error("Function Exception:", error);
     return new Response(JSON.stringify({ error: error.message }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },

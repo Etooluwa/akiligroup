@@ -12,7 +12,7 @@ export async function onRequestPost(context) {
     }
 
     // Use the provided API key from environment variables if available, 
-    // otherwise fallback to the one provided in the chat (for immediate testing).
+    // otherwise fallback to a default (though the user should set the env var).
     const apiKey = env.RESEND_API_KEY || 're_FLKDFYtd_5HfxaCjQzzMB357ZkBHCx1Y1';
 
     const resendResponse = await fetch('https://api.resend.com/emails', {
@@ -22,7 +22,7 @@ export async function onRequestPost(context) {
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        from: 'Akili Group <onboarding@resend.dev>', // Resend default test domain
+        from: 'Akili Group <notifications@forms.akiligroup.ca>',
         to: 'info@akiligroup.ca',
         subject: 'New Multifamily Guide Lead',
         html: `<p>New lead from "Discover the Wealth Strategy" section:</p><p><strong>Email:</strong> ${email}</p>`,

@@ -765,16 +765,23 @@
                     document.getElementById('pdf-download-container').classList.remove('hidden');
                 } else {
                     const errorData = await response.json();
-                    console.error("Submission Error:", errorData);
-                    alert("Error: " + (errorData.error || "Something went wrong.") + "\n\nPlease check your console or Resend dashboard.");
+                    console.error("Submission Error Details:", errorData);
+                    
+                    let errorMessage = "Something went wrong. Please try again.";
+                    if (errorData.error) {
+                        errorMessage = `Error: ${errorData.error}`;
+                    }
+                    
+                    alert(errorMessage + "\n\nIf the issue persists, please contact info@akiligroup.ca");
+                    
                     submitBtn.innerText = originalText;
                     submitBtn.disabled = false;
                 }
             } catch (error) {
                 console.error("Network Error:", error);
-                // Fallback to showing download if network fails but we want to be lenient
-                document.getElementById('pdf-form-container').classList.add('hidden');
-                document.getElementById('pdf-download-container').classList.remove('hidden');
+                alert("Network error. Please check your connection and try again.");
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
             }
         };
     </script>

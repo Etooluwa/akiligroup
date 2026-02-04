@@ -1,254 +1,314 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Akili Group</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <style>
-      :root { --bg-dark: #0f1115; --text-light: #f3f4f6; --accent-gold: #d4af37; }
-      body { background-color: var(--bg-dark); color: var(--text-light); font-family: 'Manrope', sans-serif; overflow-x: hidden; }
-      h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; }
-      .text-gold { color: var(--accent-gold); }
-      .border-gold { border-color: var(--accent-gold); }
-      .bg-gold { background-color: var(--accent-gold); }
-      ::-webkit-scrollbar { width: 6px; }
-      ::-webkit-scrollbar-track { background: var(--bg-dark); }
-      ::-webkit-scrollbar-thumb { background: #333; }
-      ::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
-      /* Mobile Menu Transition */
-      .mobile-menu-open {
-          transform: translateX(0%) !important;
-      }
-      body.menu-open {
-          overflow: hidden;
-      }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Akili Group</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/OxfAml8.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f1115;
+            --text-light: #f3f4f6;
+            --accent-gold: #d4af37;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .text-gold {
+            color: var(--accent-gold);
+        }
+
+        .border-gold {
+            border-color: var(--accent-gold);
+        }
+
+        .bg-gold {
+            background-color: var(--accent-gold);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-gold);
+        }
+
+        /* Mobile Menu Transition */
+        .mobile-menu-open {
+            transform: translateX(0%) !important;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body class="antialiased selection:bg-[#d4af37] selection:text-black min-h-screen flex flex-col">
 
 
 
 
-  <!-- NAVIGATION -->
-  <nav class="fixed w-full z-50 px-6 py-6 md:px-12 flex justify-between items-center transition-all duration-300 text-white bg-[#0f1115]/90 backdrop-blur-md shadow-lg py-4" id="navbar">
-      <a href="index.html" class="z-50 relative drop-shadow-md">
-          <img src="https://i.imgur.com/7KP8dJ0.png" alt="Akili Group Logo" class="h-12 w-auto">
-      </a>
-    
-      <!-- Desktop Menu -->
-      <div class="hidden xl:flex gap-8 text-xs uppercase tracking-[0.2em] font-medium items-center drop-shadow-md">
-          <a href="index.html#what-we-do" class="hover:text-[#d4af37] transition-colors">Firm</a>
-          <a href="about.html" class="text-[#d4af37] transition-colors">About Us</a>
-          <a href="index.html#team" class="hover:text-[#d4af37] transition-colors">Leadership</a>
-          <a href="index.html#services" class="hover:text-[#d4af37] transition-colors">Services</a>
-          <a href="index.html#careers" class="hover:text-[#d4af37] transition-colors">Careers</a>
-      </div>
-      <a href="index.html#contact-form-section" class="hidden xl:block border border-white/30 px-6 py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all z-50 drop-shadow-md bg-black/10 backdrop-blur-sm">Contact</a>
-    
-      <!-- Mobile Menu Button (Hamburger) -->
-      <button id="mobile-menu-btn" class="xl:hidden z-50 p-2 focus:outline-none text-white drop-shadow-md">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-      </button>
-  </nav>
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 px-6 py-6 md:px-12 flex justify-between items-center transition-all duration-300 text-white bg-[#0f1115]/90 backdrop-blur-md shadow-lg py-4"
+        id="navbar">
+        <a href="index.html" class="z-50 relative drop-shadow-md">
+            <img src="https://i.imgur.com/OxfAml8.png" alt="Akili Group Logo" class="h-12 w-auto">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden xl:flex gap-8 text-xs uppercase tracking-[0.2em] font-medium items-center drop-shadow-md">
+            <a href="index.html#what-we-do" class="hover:text-[#d4af37] transition-colors">Firm</a>
+            <a href="about.html" class="text-[#d4af37] transition-colors">About Us</a>
+            <a href="index.html#team" class="hover:text-[#d4af37] transition-colors">Leadership</a>
+            <a href="index.html#services" class="hover:text-[#d4af37] transition-colors">Services</a>
+            <a href="index.html#careers" class="hover:text-[#d4af37] transition-colors">Careers</a>
+        </div>
+        <a href="index.html#contact-form-section"
+            class="hidden xl:block border border-white/30 px-6 py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all z-50 drop-shadow-md bg-black/10 backdrop-blur-sm">Contact</a>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <button id="mobile-menu-btn" class="xl:hidden z-50 p-2 focus:outline-none text-white drop-shadow-md">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+    </nav>
 
 
 
 
-  <!-- MOBILE OFF-CANVAS MENU -->
-  <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0f1115]/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col justify-center items-center xl:hidden">
-      <button id="close-menu-btn" class="absolute top-6 right-6 p-2 text-white/50 hover:text-white transition-colors">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-      </button>
+    <!-- MOBILE OFF-CANVAS MENU -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[60] bg-[#0f1115]/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col justify-center items-center xl:hidden">
+        <button id="close-menu-btn" class="absolute top-6 right-6 p-2 text-white/50 hover:text-white transition-colors">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
 
 
 
 
-      <div class="flex flex-col gap-8 text-center">
-          <a href="index.html#what-we-do" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Firm</a>
-          <a href="about.html" class="text-2xl serif text-gold transition-colors mobile-link">About Us</a>
-          <a href="index.html#team" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Leadership</a>
-          <a href="index.html#services" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Services</a>
-          <a href="index.html#careers" class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Careers</a>
-          <a href="index.html#contact-form-section" class="mt-8 inline-block border border-white/30 px-8 py-4 text-xs uppercase tracking-[0.2em] text-white hover:bg-gold hover:border-gold hover:text-black transition-all mobile-link">
-              Contact
-          </a>
-      </div>
-  </div>
+        <div class="flex flex-col gap-8 text-center">
+            <a href="index.html#what-we-do"
+                class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Firm</a>
+            <a href="about.html" class="text-2xl serif text-gold transition-colors mobile-link">About Us</a>
+            <a href="index.html#team"
+                class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Leadership</a>
+            <a href="index.html#services"
+                class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Services</a>
+            <a href="index.html#careers"
+                class="text-2xl serif text-white hover:text-gold transition-colors mobile-link">Careers</a>
+            <a href="index.html#contact-form-section"
+                class="mt-8 inline-block border border-white/30 px-8 py-4 text-xs uppercase tracking-[0.2em] text-white hover:bg-gold hover:border-gold hover:text-black transition-all mobile-link">
+                Contact
+            </a>
+        </div>
+    </div>
 
 
 
 
-  <!-- SECTION 1: PARTNERSHIP IS PARAMOUNT -->
-  <section class="pt-40 pb-20 md:py-32 bg-[#0f1115] relative">
-      <div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 flex flex-col lg:flex-row gap-16 items-center">
-        
-          <!-- Text Content -->
-          <div class="w-full lg:w-1/2 fade-in-up">
-              <h1 class="text-4xl md:text-6xl serif text-white mb-8 leading-tight">
-                  Partnership is paramount.
-              </h1>
-              <div class="w-20 h-[1px] bg-gold mb-8"></div>
-              <!-- Reduced font size to text-base (from text-lg) and trimmed content to approx 5 lines -->
-              <div class="text-gray-400 font-light text-base leading-relaxed space-y-4">
-                  <p>
-                      Established in 2021, AKILI provides the necessary specialization to scale investors' portfolios and maintain a competitive advantage. We offer tailored strategies to match our clients’ vision, creating a truly singular experience for investors looking to make their mark.
-                  </p>
-              </div>
-          </div>
+    <!-- SECTION 1: PARTNERSHIP IS PARAMOUNT -->
+    <section class="pt-40 pb-20 md:py-32 bg-[#0f1115] relative">
+        <div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 flex flex-col lg:flex-row gap-16 items-center">
+
+            <!-- Text Content -->
+            <div class="w-full lg:w-1/2 fade-in-up">
+                <h1 class="text-4xl md:text-6xl serif text-white mb-8 leading-tight">
+                    Partnership is paramount.
+                </h1>
+                <div class="w-20 h-[1px] bg-gold mb-8"></div>
+                <!-- Reduced font size to text-base (from text-lg) and trimmed content to approx 5 lines -->
+                <div class="text-gray-400 font-light text-base leading-relaxed space-y-4">
+                    <p>
+                        Established in 2021, AKILI provides the necessary specialization to scale investors' portfolios
+                        and maintain a competitive advantage. We offer tailored strategies to match our clients’ vision,
+                        creating a truly singular experience for investors looking to make their mark.
+                    </p>
+                </div>
+            </div>
 
 
 
 
-          <!-- Image -->
-          <div class="w-full lg:w-1/2 relative fade-in-up" style="transition-delay: 0.1s">
-              <div class="aspect-[4/3] overflow-hidden relative border border-white/5">
-                  <div class="absolute inset-0 bg-black/20"></div>
-                  <img src="https://imgur.com/RN7PYGg.jpeg"
-                       alt="Partnership Handshake"
-                       class="w-full h-full object-cover transition-all duration-700">
-              </div>
-          </div>
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 relative fade-in-up" style="transition-delay: 0.1s">
+                <div class="aspect-[4/3] overflow-hidden relative border border-white/5">
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <img src="https://imgur.com/RN7PYGg.jpeg" alt="Partnership Handshake"
+                        class="w-full h-full object-cover transition-all duration-700">
+                </div>
+            </div>
 
 
 
 
-      </div>
-  </section>
+        </div>
+    </section>
 
 
-  <!-- SECTION 2: WHAT SETS US APART (FULL WIDTH BACKGROUND STYLE) -->
-  <section class="relative py-32 md:py-48 flex items-center bg-[#0a0b0e] overflow-hidden">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0">
-          <div class="absolute inset-0 bg-black/60 z-10"></div>
-          <!-- Updated Background Image -->
-          <img src="https://imgur.com/hlMwlL6.jpeg"
-               class="w-full h-full object-cover"
-               alt="What Sets Us Apart Background">
-      </div>
+    <!-- SECTION 2: WHAT SETS US APART (FULL WIDTH BACKGROUND STYLE) -->
+    <section class="relative py-32 md:py-48 flex items-center bg-[#0a0b0e] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <!-- Updated Background Image -->
+            <img src="https://imgur.com/hlMwlL6.jpeg" class="w-full h-full object-cover"
+                alt="What Sets Us Apart Background">
+        </div>
 
 
-      <!-- Content -->
-      <div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 relative z-20 flex justify-start">
-          <div class="w-full lg:w-1/2 fade-in-up">
-              <h2 class="text-4xl md:text-6xl serif text-white mb-8 leading-tight">What Sets Us Apart</h2>
-              <div class="w-20 h-[1px] bg-gold mb-8"></div>
-              <!-- Reduced font size to text-base (was md:text-lg) -->
-              <div class="text-gray-200 font-light text-base leading-relaxed space-y-6">
-                  <p>
-                      Data-driven and collaborative, we bring a distinctive mix of intelligent loan analysis and responsive communications. Our unmatched administrative capabilities provide clients with cost-effective, scalable solutions in commercial real estate.
-                  </p>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-
-
-  <!-- SECTION 3: OUR CULTURE -->
-  <section class="py-32 bg-[#0f1115] relative">
-      <div class="w-full max-w-[1440px] mx-auto px-6 md:px-10">
-        
-          <!-- Text Content (Centered) -->
-          <div class="text-center max-w-3xl mx-auto fade-in-up">
-              <h2 class="text-4xl md:text-5xl serif text-white mb-4">Our Culture</h2>
-              <p class="text-gold text-sm uppercase tracking-[0.3em] mb-12">Where Relationships Matter</p>
-            
-              <div class="space-y-6">
-                  <p class="text-2xl md:text-4xl serif text-gray-300 font-light leading-tight">
-                      We do it well.
-                  </p>
-                  <p class="text-2xl md:text-4xl serif text-white font-light leading-tight">
-                      We do it right.
-                  </p>
-                  <p class="text-2xl md:text-4xl serif text-gold font-light leading-tight">
-                      We do it together.
-                  </p>
-              </div>
-
-
-              <div class="mt-16">
-                  <p class="text-sm text-gray-400 uppercase tracking-widest mb-6">Discover AKILI’s Purpose, Vision and Values</p>
-                  <a href="index.html#contact-form-section" class="inline-block border border-white/30 px-8 py-4 text-xs uppercase tracking-[0.2em] text-white hover:bg-gold hover:border-gold hover:text-black transition-all">
-                      Get In Touch
-                  </a>
-              </div>
-          </div>
+        <!-- Content -->
+        <div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 relative z-20 flex justify-start">
+            <div class="w-full lg:w-1/2 fade-in-up">
+                <h2 class="text-4xl md:text-6xl serif text-white mb-8 leading-tight">What Sets Us Apart</h2>
+                <div class="w-20 h-[1px] bg-gold mb-8"></div>
+                <!-- Reduced font size to text-base (was md:text-lg) -->
+                <div class="text-gray-200 font-light text-base leading-relaxed space-y-6">
+                    <p>
+                        Data-driven and collaborative, we bring a distinctive mix of intelligent loan analysis and
+                        responsive communications. Our unmatched administrative capabilities provide clients with
+                        cost-effective, scalable solutions in commercial real estate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
-      </div>
-  </section>
+    <!-- SECTION 3: OUR CULTURE -->
+    <section class="py-32 bg-[#0f1115] relative">
+        <div class="w-full max-w-[1440px] mx-auto px-6 md:px-10">
+
+            <!-- Text Content (Centered) -->
+            <div class="text-center max-w-3xl mx-auto fade-in-up">
+                <h2 class="text-4xl md:text-5xl serif text-white mb-4">Our Culture</h2>
+                <p class="text-gold text-sm uppercase tracking-[0.3em] mb-12">Where Relationships Matter</p>
+
+                <div class="space-y-6">
+                    <p class="text-2xl md:text-4xl serif text-gray-300 font-light leading-tight">
+                        We do it well.
+                    </p>
+                    <p class="text-2xl md:text-4xl serif text-white font-light leading-tight">
+                        We do it right.
+                    </p>
+                    <p class="text-2xl md:text-4xl serif text-gold font-light leading-tight">
+                        We do it together.
+                    </p>
+                </div>
+
+
+                <div class="mt-16">
+                    <p class="text-sm text-gray-400 uppercase tracking-widest mb-6">Discover AKILI’s Purpose, Vision and
+                        Values</p>
+                    <a href="index.html#contact-form-section"
+                        class="inline-block border border-white/30 px-8 py-4 text-xs uppercase tracking-[0.2em] text-white hover:bg-gold hover:border-gold hover:text-black transition-all">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
 
 
 
 
-  <footer class="bg-black py-10 border-t border-white/10 text-center text-[10px] text-gray-600 uppercase tracking-widest">
-      <p>&copy; 2024 Akili Group Corp.</p>
-  </footer>
+        </div>
+    </section>
 
 
 
 
-  <!-- GSAP Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script>
-      // Mobile Menu Logic
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const closeMenuBtn = document.getElementById('close-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileLinks = document.querySelectorAll('.mobile-link');
+    <footer
+        class="bg-black py-10 border-t border-white/10 text-center text-[10px] text-gray-600 uppercase tracking-widest">
+        <p>&copy; 2024 Akili Group Corp.</p>
+    </footer>
 
 
 
 
-      function toggleMenu() {
-          mobileMenu.classList.toggle('mobile-menu-open');
-          document.body.classList.toggle('menu-open');
-      }
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
 
 
 
 
-      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
-      if (closeMenuBtn) closeMenuBtn.addEventListener('click', toggleMenu);
+        function toggleMenu() {
+            mobileMenu.classList.toggle('mobile-menu-open');
+            document.body.classList.toggle('menu-open');
+        }
 
 
 
 
-      // Close menu when a link is clicked
-      mobileLinks.forEach(link => {
-          link.addEventListener('click', toggleMenu);
-      });
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
+        if (closeMenuBtn) closeMenuBtn.addEventListener('click', toggleMenu);
 
 
 
 
-      // Animations
-      document.addEventListener("DOMContentLoaded", () => {
-          gsap.utils.toArray('.fade-in-up').forEach((el, index) => {
-              gsap.fromTo(el,
-                  { opacity: 0, y: 30 },
-                  {
-                      opacity: 1,
-                      y: 0,
-                      duration: 0.8,
-                      ease: "power2.out",
-                      delay: index * 0.1 + 0.2 // Staggered delay
-                  }
-              );
-          });
-      });
-  </script>
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+
+
+
+        // Animations
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.utils.toArray('.fade-in-up').forEach((el, index) => {
+                gsap.fromTo(el,
+                    { opacity: 0, y: 30 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.8,
+                        ease: "power2.out",
+                        delay: index * 0.1 + 0.2 // Staggered delay
+                    }
+                );
+            });
+        });
+    </script>
 </body>
+
 </html>
